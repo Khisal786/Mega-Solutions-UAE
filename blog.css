@@ -1,0 +1,308 @@
+/* Reset & Font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  /* Layout Container */
+  .container {
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  /* Left Column */
+  .left-column {
+    width: 25%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+    border-right: 5px solid transparent;
+    border-right: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* Right Column */
+  .right-column {
+    width: 75%;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+    overflow-y: auto;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+  }
+  
+  /* Watermark Image */
+  .right-column::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/jenbacher_logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .left-column:hover .logo {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+    z-index: 10;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background: linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Blog Page */
+  .content {
+    padding-top: 80px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .page-title {
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #222;
+  }
+  
+  .page-description {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* Blog Cards */
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .blog-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-card img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+  }
+  
+  .blog-text {
+    padding: 20px;
+  }
+  
+  .blog-text h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #007BFF;
+  }
+  
+  .blog-text p {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+  
+    .blog-card {
+      flex-direction: column;
+    }
+  
+    .blog-card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .navbar {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .page-title {
+      font-size: 32px;
+    }
+  
+    .blog-text h2 {
+      font-size: 18px;
+    }
+  }
+  
+
+  /* Blog Post Page */
+.blog-post {
+  padding-top: 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.post-title {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-content {
+  font-size: 17px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.post-content h2 {
+  margin-top: 30px;
+  color: #007BFF;
+  font-size: 22px;
+}
+
+.post-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.post-content ul li {
+  margin-bottom: 8px;
+}
+
+
+
+/* Footer Styles */
+footer.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #007BFF, #00C2FF, #00FFAA);
+  color: white;
+  padding: 15px 30px;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+
+footer .footer-left,
+footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-left a,
+footer .footer-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .footer-left a:hover,
+footer .footer-right a:hover {
+  color: #000;
+}
+
+footer .footer-left i,
+footer .footer-right i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+footer .footer-center {
+  text-align: center;
+  flex-grow: 1;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer.footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer-left,
+  footer .footer-right,
+  footer .footer-center {
+    margin: 5px 0;
+    justify-content: center;
+  }
+}

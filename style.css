@@ -1,0 +1,286 @@
+/* General Reset & Font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Page Container */
+.container {
+    display: flex;
+    height: 100vh; /* Ensure the container takes up the full viewport */
+    background-color: #ffffff;
+}
+
+/* Left column (25%) with stronger shadow effect */
+.left-column {
+    width: 25%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow effect */
+    z-index: 1;
+    position: relative;
+    border-right: 5px solid transparent; /* Initial transparent border */
+    transition: border-right 0.3s ease; /* Smooth transition on color change */
+}
+
+/* Permanent color for the left column separation */
+.left-column {
+    border-right: 5px solid transparent; /* Initialize with transparent border */
+}
+
+/* Permanent gradient color for the left column separator */
+.left-column {
+    border-right: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA); /* Permanent gradient color */
+}
+
+/* Right column (75%) */
+.right-column {
+    width: 75%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #ffffff;
+    justify-content: center; /* Vertically centers the content */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow effect for separation */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Watermark Background (Jenbacher Image) */
+.right-column::before {
+    content: "";
+    position: absolute;
+    top: 80%; /* Keep the image at the bottom of the content section */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/jenbacher_logo.png'); /* Ensure this path is correct */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Logo (left side) */
+.logo {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+/* Logo hover effect */
+.left-column:hover .logo {
+    transform: scale(1.1); /* Makes the logo pop out */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow when hovered */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    position: fixed; /* Fixed to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background-color: #fff; /* Background color to ensure it's not transparent */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+    z-index: 10;
+    border-bottom: 5px solid transparent; /* Initially transparent border */
+}
+
+/* Permanent gradient color for the bottom border of the navbar */
+.navbar {
+    border-bottom: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA); /* Permanent gradient border */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background: linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA); /* Gradient effect */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    margin-top: 50px; /* Increased margin to position the content properly */
+    position: relative;
+    z-index: 2;
+}
+
+.company-name {
+    font-size: 48px; /* Increased font size for better impact */
+    margin: 0;
+    color: #222;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Company name hover effect */
+.content:hover .company-name {
+    transform: scale(1.1); /* Makes the company name pop */
+    background: linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA); /* Gradient color effect */
+    -webkit-background-clip: text; /* Webkit prefix for compatibility */
+    background-clip: text; /* Standard property for compatibility */
+    color: transparent; /* Makes the text color transparent to show the gradient */
+}
+
+.description {
+    font-size: 18px; /* Increased font size */
+    margin: 20px 0;
+    color: #666;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Us Button */
+.contact-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .navbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .content {
+        margin-top: 20px; /* Adjust margin for small screens */
+        padding: 0 20px;
+    }
+
+    .company-name {
+        font-size: 32px; /* Adjusted font size for small screens */
+    }
+
+    .description {
+        font-size: 16px; /* Adjusted font size for small screens */
+    }
+
+    .contact-btn {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .right-column::before {
+        top: 80%; /* Ensure the image is placed below content */
+        width: 100%;
+        opacity: 0.1; /* Adjust opacity for better visibility */
+    }
+}
+
+
+
+/* Footer Styles */
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #007BFF, #00C2FF, #00FFAA);
+    color: white;
+    padding: 15px 30px;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+  
+  footer .footer-left,
+  footer .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .footer-left a,
+  footer .footer-right a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  footer .footer-left a:hover,
+  footer .footer-right a:hover {
+    color: #000;
+  }
+  
+  footer .footer-left i,
+  footer .footer-right i {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+  
+  footer .footer-center {
+    text-align: center;
+    flex-grow: 1;
+    padding: 5px 10px;
+    color: #fff;
+  }
+  
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    footer.footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    footer .footer-left,
+    footer .footer-right,
+    footer .footer-center {
+      margin: 5px 0;
+      justify-content: center;
+    }
+  }
+  
