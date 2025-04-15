@@ -60,7 +60,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../images/jenbacher_logo.png'); /* Ensure this path is correct */
+    background-image: url('jenbacher_logo.png'); /* Ensure this path is correct */
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
