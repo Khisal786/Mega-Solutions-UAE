@@ -1,7 +1,7 @@
 const predefinedQA = {
     "what products do you sell": "We sell original Jenbacher Gas Engine spare parts.",
     "where are you located": "We are based in the UAE and ship worldwide.",
-    "how to contact you": "You can contact us via WhatsApp or call at +971 56 624 0969, Also you can reach out to us through our Email: MegaSolutionsUAE@gmail.com",
+    "how to contact you": "You can contact us via WhatsApp by clicking Whatsapp icon on bottom of any page or from contact page, or Call at +971 56 624 0969, or you can reach us via our Email: info@MegaSolutionsUAE.com",
     "do you offer original jenbacher parts": "Yes, all our parts are 100% original and authentic.",
   };
   
