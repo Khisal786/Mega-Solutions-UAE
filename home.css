@@ -1,0 +1,202 @@
+/* General Reset & Font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #007BFF, #00C2FF, #00FFAA);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .nav-left .nav-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar .nav-left .nav-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .navbar .nav-right a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .nav-right a:hover,
+  .navbar .nav-right a.active {
+    color: #000;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+  }
+  
+  /* Logo Header */
+  .logo-header {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .logo-link {
+    display: inline-block;
+  }
+  
+  .logo-img {
+    width: 150px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .logo-img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  
+  /* Centered Homepage Content */
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    min-height: calc(100vh - 370px); /* subtract nav + logo + footer approx height */
+    text-align: center;
+  }
+  
+  .home-content .company-name {
+    font-size: 3rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  .home-content .description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  .contact-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #007BFF, #00C2FF, #00FFAA);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-btn:hover {
+    background: #00C2FF;
+    transform: scale(1.05);
+  }
+  
+  /* Footer Styles */
+  footer.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #007BFF, #00C2FF, #00FFAA);
+    color: white;
+    padding: 15px 30px;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+  
+  footer .footer-left,
+  footer .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .footer-left a,
+  footer .footer-right a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  footer .footer-left a:hover,
+  footer .footer-right a:hover {
+    color: #000;
+  }
+  
+  footer .footer-left i,
+  footer .footer-right i {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
+  
+  footer .footer-center {
+    text-align: center;
+    flex-grow: 1;
+    padding: 5px 10px;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+  
+    .navbar .nav-right a {
+      margin: 10px 0 0;
+    }
+  
+    .logo-img {
+      width: 120px;
+    }
+  
+    .home-content .company-name {
+      font-size: 2rem;
+    }
+  
+    .home-content .company-name {
+        font-size: 3rem;
+        color: #000; /* Black by default */
+        margin-bottom: 20px;
+        transition: all 0.4s ease;
+      }
+      
+      .home-content .company-name:hover {
+        background: linear-gradient(to right, #007BFF, #00C2FF, #00FFAA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(1.05);
+      }
+      
+    .home-content .description {
+      font-size: 1rem;
+    }
+  
+    footer.footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    footer .footer-left,
+    footer .footer-right,
+    footer .footer-center {
+      margin: 5px 0;
+      justify-content: center;
+    }
+  }
+  
