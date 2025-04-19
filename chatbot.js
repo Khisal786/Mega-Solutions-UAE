@@ -8,7 +8,7 @@ const predefinedQA = {
   function createChatUI() {
     const chatBtn = document.createElement("div");
     chatBtn.id = "chat-bubble";
-    chatBtn.innerHTML = "💬";
+    chatBtn.innerHTML = "🗪";
     document.body.appendChild(chatBtn);
   
     const chatBox = document.createElement("div");
