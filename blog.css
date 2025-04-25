@@ -1,203 +1,235 @@
 /* Reset & Font */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-  }
-  
-  /* Layout Container */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Layout Container */
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+  flex-direction: row; /* Default to row for desktop */
+}
+
+/* Left Column */
+.left-column {
+  width: 25%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+  border-right: 5px solid transparent;
+  border-right: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+  z-index: 1;
+  position: relative;
+}
+
+/* Right Column */
+.right-column {
+  width: 75%;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1;
+  overflow-y: auto;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* Watermark Image */
+.right-column::before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/jenbacher_logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Logo Styling */
+.logo {
+  max-width: 80%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left-column:hover .logo {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Link (added for alignment on mobile) */
+.left-column a.logo-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+  z-index: 10;
+  flex-wrap: wrap; /* Added for better mobile layout */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background: linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Blog Page */
+.content {
+  padding-top: 80px;
+  z-index: 2;
+  position: relative;
+}
+
+.page-title {
+  font-size: 42px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #222;
+}
+
+.page-description {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Blog Cards */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blog-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.blog-text {
+  padding: 20px;
+}
+
+.blog-text h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #007BFF;
+}
+
+.blog-text p {
+  font-size: 16px;
+  color: #444;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
   .container {
-    display: flex;
-    height: 100vh;
-    background-color: #ffffff;
+      flex-direction: column;
+      min-height: auto; /* Adjust height for stacked content */
+      overflow-x: hidden; /* Ensure no horizontal scroll */
   }
-  
-  /* Left Column */
+
   .left-column {
-    width: 25%;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
-    border-right: 5px solid transparent;
-    border-right: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
-    z-index: 1;
-    position: relative;
-  }
-  
-  /* Right Column */
-  .right-column {
-    width: 75%;
-    padding: 20px 40px;
-    position: relative;
-    z-index: 1;
-    overflow-y: auto;
-    background-color: #ffffff;
-    scroll-behavior: smooth;
-  }
-  
-  /* Watermark Image */
-  .right-column::before {
-    content: "";
-    position: absolute;
-    top: 80%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../images/jenbacher_logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    opacity: 0.2;
-    z-index: 0;
-    pointer-events: none;
-  }
-  
-  /* Logo Styling */
-  .logo {
-    max-width: 80%;
-    height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .left-column:hover .logo {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
-    z-index: 10;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px 12px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    background: linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
-    color: #fff;
-    border-radius: 5px;
-  }
-  
-  /* Blog Page */
-  .content {
-    padding-top: 80px;
-    z-index: 2;
-    position: relative;
-  }
-  
-  .page-title {
-    font-size: 42px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #222;
-  }
-  
-  .page-description {
-    text-align: center;
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 40px;
-  }
-  
-  /* Blog Cards */
-  .blog-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .blog-card {
-    display: flex;
-    align-items: flex-start;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s ease;
-  }
-  
-  .blog-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .blog-card img {
-    width: 200px;
-    height: 140px;
-    object-fit: cover;
-  }
-  
-  .blog-text {
-    padding: 20px;
-  }
-  
-  .blog-text h2 {
-    margin: 0 0 10px;
-    font-size: 20px;
-    color: #007BFF;
-  }
-  
-  .blog-text p {
-    font-size: 16px;
-    color: #444;
-  }
-  
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .left-column,
-    .right-column {
       width: 100%;
-    }
-  
-    .blog-card {
+      box-shadow: none;
+      border-right: none;
+      border-bottom: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+      padding: 15px;
+      display: flex;
+      order: -1; /* Move to the top */
+      align-items: center;
+      justify-content: center;
+  }
+
+  .right-column {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .blog-card {
       flex-direction: column;
-    }
-  
-    .blog-card img {
+  }
+
+  .blog-card img {
       width: 100%;
       height: auto;
-    }
-  
-    .navbar {
+  }
+
+  .navbar {
       justify-content: center;
       flex-wrap: wrap;
-    }
-  
-    .page-title {
-      font-size: 32px;
-    }
-  
-    .blog-text h2 {
-      font-size: 18px;
-    }
+      position: sticky; /* Use sticky for mobile nav */
+      top: 0;
+      padding: 10px;
+      border-bottom: none;
+      box-shadow: none;
+      gap: 10px;
+      margin-bottom: 10px;
   }
-  
 
-  /* Blog Post Page */
+  .page-title {
+      font-size: 32px;
+  }
+
+  .blog-text h2 {
+      font-size: 18px;
+  }
+}
+
+
+/* Blog Post Page */
 .blog-post {
   padding-top: 80px;
   max-width: 900px;
@@ -295,14 +327,47 @@ footer .footer-center {
 /* Responsive Footer */
 @media (max-width: 768px) {
   footer.footer {
-    flex-direction: column;
-    text-align: center;
+      flex-direction: column;
+      text-align: center;
   }
 
   footer .footer-left,
   footer .footer-right,
   footer .footer-center {
-    margin: 5px 0;
-    justify-content: center;
+      margin: 5px 0;
+      justify-content: center;
+  }
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 60px; /* Adjust as needed to avoid overlap with footer on small screens */
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Adjust on smaller screens */
+@media (max-width: 768px) {
+  .whatsapp-float {
+      bottom: 50px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
   }
 }
