@@ -364,10 +364,102 @@ footer .footer-center {
 
 /* Adjust on smaller screens */
 @media (max-width: 768px) {
-  .whatsapp-float {
-      bottom: 50px;
-      right: 15px;
-      width: 50px;
-      height: 50px;
+  /* Ensure no horizontal scrolling */
+  body {
+    overflow-x: hidden;
   }
+
+  /* Adjust container width */
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; /* Take full width */
+    box-shadow: none;
+  }
+
+  /* Navbar centering */
+  .navbar {
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+
+  /* Reduce the size of the logo */
+  .logo {
+    max-width: 180px;  /* Reduce max-width for better fitting */
+    height: auto;
+  }
+
+  /* Adjust content sections */
+  .content {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Footer adjustments */
+  footer.footer {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px 0;
+  }
+
+  .footer-left, .footer-right, .footer-center {
+    margin: 5px 0;
+    justify-content: center;
+  }
+
+  /* Hide watermark for mobile */
+  .right-column::before {
+    display: none;
+  }
+
+  /* Mobile-specific container tweaks */
+  .container {
+    overflow: hidden;
+  }
+
+  /* Optional: Modify button size on smaller screens */
+  .contact-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+    align-self: center;
+  }
+}
+
+
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 110px; /* Slightly above the FAQ bubble */
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
