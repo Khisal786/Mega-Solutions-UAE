@@ -141,7 +141,6 @@
                   <div class="dots">
                     <span class="dot active"></span>
                     <span class="dot"></span>
-                    <span class="dot"></span>
                   </div>
                 </div>
               </div>
@@ -194,37 +193,26 @@
         <i class="fab fa-whatsapp fa-lg"></i>
     </a>
     <script>
-        document.querySelectorAll('.slider').forEach((slider) => {
-          let current = 0;
-          const slides = slider.querySelectorAll('.slide');
-          const thumbs = slider.querySelectorAll('.thumb');
-          const dots = slider.querySelectorAll('.dot');
-          const next = slider.querySelector('.next');
-          const prev = slider.querySelector('.prev');
+        document.addEventListener("DOMContentLoaded", function () {
+          const sliders = document.querySelectorAll(".slider");
       
-          function showSlide(index) {
-            slides.forEach((s, i) => s.classList.toggle('active', i === index));
-            thumbs.forEach((t, i) => t.classList.toggle('active', i === index));
-            dots.forEach((d, i) => d.classList.toggle('active', i === index));
-            current = index;
-          }
+          sliders.forEach((slider) => {
+            const slidesContainer = slider.querySelector(".slides");
+            const dots = slider.querySelectorAll(".dot");
+            const slides = slider.querySelectorAll(".slide");
       
-          next?.addEventListener('click', () => {
-            showSlide((current + 1) % slides.length);
-          });
+            slidesContainer.addEventListener("scroll", () => {
+              const scrollLeft = slidesContainer.scrollLeft;
+              const slideWidth = slidesContainer.clientWidth;
       
-          prev?.addEventListener('click', () => {
-            showSlide((current - 1 + slides.length) % slides.length);
-          });
+              const index = Math.round(scrollLeft / slideWidth);
       
-          thumbs.forEach((thumb, index) => {
-            thumb.addEventListener('click', () => showSlide(index));
-          });
-      
-          dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => showSlide(index));
+              dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === index);
+              });
+            });
           });
         });
-      </script>      
+      </script>            
 </body>
 </html>
