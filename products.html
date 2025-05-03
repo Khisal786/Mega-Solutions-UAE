@@ -92,24 +92,74 @@
     <section class="product-section">
         <div class="product-item">
             <div class="product-image">
-                <img src="product_1.png" alt="Product 1" />
-            </div>
+                <div class="slider">
+                  <div class="slides">
+                    <img src="product_1.png" class="slide active" alt="Product Image 1">
+                    <img src="product_2.png" class="slide" alt="Product Image 2">
+                    <img src="product_3.png" class="slide" alt="Product Image 3">
+                  </div>
+                  <div class="slider-controls">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                  </div>
+                  <div class="thumbnails">
+                    <img src="product_1.png" class="thumb active">
+                    <img src="product_2.png" class="thumb">
+                    <img src="product_3.png" class="thumb">
+                  </div>
+                  <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                </div>
+              </div>
             <div class="product-description">
-                <h2>Jenbacher 420</h2>
-                <p>This is a premium Jenbacher spare part designed for durability and long engine life.</p>
-            </div>
+                <h2>Spark Plugs</h2>
+                <p>Another high-quality original part with certified OEM compatibility.</p>
+                <a href="contact.html" class="contact-btn" role="button">Inquire</a>
+            </div>              
         </div>
     </section>
 
     <section class="product-section">
         <div class="product-item">
             <div class="product-image">
-                <img src="product_2.png" alt="Product 2" />
-            </div>
+                <div class="slider">
+                  <div class="slides">
+                    <img src="products_precombustion_chamber_1.webp" class="slide active" alt="Product Image 1">
+                    <img src="products_precombustion_chamber_2.webp" class="slide" alt="Product Image 2">
+                  </div>
+                  <div class="slider-controls">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                  </div>
+                  <div class="thumbnails">
+                    <img src="products_precombustion_chamber_1.webp" class="thumb active">
+                    <img src="products_precombustion_chamber_2.webp" class="thumb">
+                  </div>
+                  <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                </div>
+              </div>
             <div class="product-description">
-                <h2>Spark Plugs</h2>
-                <p>Another high-quality original part with certified OEM compatibility.</p>
-            </div>
+                <h2>PreCombustion Chamber</h2>
+                <p>Original Precombustion Chamber Unit (Model 438604) for Jenbacher Engines.<br>
+                    Compatible with Jenbacher Type 6 and Type 9 engine series.<br><br>
+                    
+                    Primary reference: 438604<br>
+                    
+                    Alternate formats: 438-604, 438 604<br>
+                    
+                    Previous model numbers: 9029433, 902-9433, 902 9433<br><br>
+                    
+                    This component is engineered as a direct fit for specified Jenbacher engine models, ensuring seamless integration and performance. The updated design supersedes earlier versions, providing enhanced reliability and compatibility.
+                    </p>
+                <a href="contact.html" class="contact-btn" role="button">Inquire</a>
+            </div>              
         </div>
     </section>
 
@@ -143,5 +193,38 @@
     <a href="https://wa.me/971566240969" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp fa-lg"></i>
     </a>
+    <script>
+        document.querySelectorAll('.slider').forEach((slider) => {
+          let current = 0;
+          const slides = slider.querySelectorAll('.slide');
+          const thumbs = slider.querySelectorAll('.thumb');
+          const dots = slider.querySelectorAll('.dot');
+          const next = slider.querySelector('.next');
+          const prev = slider.querySelector('.prev');
+      
+          function showSlide(index) {
+            slides.forEach((s, i) => s.classList.toggle('active', i === index));
+            thumbs.forEach((t, i) => t.classList.toggle('active', i === index));
+            dots.forEach((d, i) => d.classList.toggle('active', i === index));
+            current = index;
+          }
+      
+          next?.addEventListener('click', () => {
+            showSlide((current + 1) % slides.length);
+          });
+      
+          prev?.addEventListener('click', () => {
+            showSlide((current - 1 + slides.length) % slides.length);
+          });
+      
+          thumbs.forEach((thumb, index) => {
+            thumb.addEventListener('click', () => showSlide(index));
+          });
+      
+          dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+          });
+        });
+      </script>      
 </body>
 </html>
