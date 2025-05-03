@@ -23,7 +23,6 @@
     <link rel="preload" href="mega_solutions_logo.jpg" as="image" />
 
     <script src="chatbot.js" defer></script>
-    <script src="darkmode.js" defer></script>
 
     <script type="application/ld+json">
     {
@@ -127,8 +126,8 @@
             <div class="product-image">
                 <div class="slider">
                   <div class="slides">
-                    <img src="products_precombustion_chamber_1.webp" class="slide active" alt="Product Image 1">
-                    <img src="products_precombustion_chamber_2.webp" class="slide" alt="Product Image 2">
+                    <img src="products_precombustion_chamber_1.webp" class="slide active" alt="Pre Combustion Chamber">
+                    <img src="products_precombustion_chamber_2.webp" class="slide" alt="Pre Combustion Chamber">
                   </div>
                   <div class="slider-controls">
                     <button class="prev">&#10094;</button>
@@ -162,6 +161,41 @@
         </div>
     </section>
 
+
+    <section class="product-section">
+        <div class="product-item">
+            <div class="product-image">
+                <div class="slider">
+                  <div class="slides">
+                    <img src="products_prechamber_valve_1.webp" class="slide active" alt="Pre Chamber Gas Valve">
+                    <img src="products_prechamber_valve_2.webp" class="slide" alt="Pre Chamber Gas Valve">
+                    <img src="product_3.png" class="slide" alt="Product Image 3">
+                  </div>
+                  <div class="slider-controls">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                  </div>
+                  <div class="thumbnails">
+                    <img src="products_prechamber_valve_1.webp" class="thumb active">
+                    <img src="products_prechamber_valve_2.webp" class="thumb">
+                    <img src="product_3.png" class="thumb">
+                  </div>
+                  <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                </div>
+              </div>
+            <div class="product-description">
+                <h2>Pre Chamber Gas Valves</h2>
+                <p>Another high-quality original part.</p>
+                <a href="contact.html" class="contact-btn" role="button">Inquire</a>
+            </div>              
+        </div>
+    </section>
+
+
     <section class="product-section">
         <div class="product-item">
             <div class="product-image">
@@ -194,25 +228,57 @@
     </a>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-          const sliders = document.querySelectorAll(".slider");
+          document.querySelectorAll('.slider').forEach((slider) => {
+            let current = 0;
+            const slides = slider.querySelectorAll('.slide');
+            const thumbs = slider.querySelectorAll('.thumb');
+            const dots = slider.querySelectorAll('.dot');
+            const next = slider.querySelector('.next');
+            const prev = slider.querySelector('.prev');
+            const slidesContainer = slider.querySelector('.slides');
       
-          sliders.forEach((slider) => {
-            const slidesContainer = slider.querySelector(".slides");
-            const dots = slider.querySelectorAll(".dot");
-            const slides = slider.querySelectorAll(".slide");
+            function showSlide(index) {
+              slides.forEach((s, i) => s.classList.toggle('active', i === index));
+              thumbs.forEach((t, i) => t.classList.toggle('active', i === index));
+              dots.forEach((d, i) => d.classList.toggle('active', i === index));
+              current = index;
       
+              // Scroll to the correct slide on mobile
+              const slideWidth = slidesContainer.clientWidth;
+              slidesContainer.scrollTo({
+                left: slideWidth * index,
+                behavior: 'smooth'
+              });
+            }
+      
+            next?.addEventListener('click', () => {
+              showSlide((current + 1) % slides.length);
+            });
+      
+            prev?.addEventListener('click', () => {
+              showSlide((current - 1 + slides.length) % slides.length);
+            });
+      
+            thumbs.forEach((thumb, index) => {
+              thumb.addEventListener('click', () => showSlide(index));
+            });
+      
+            dots.forEach((dot, index) => {
+              dot.addEventListener('click', () => showSlide(index));
+            });
+      
+            // Swipe handling (mobile)
             slidesContainer.addEventListener("scroll", () => {
               const scrollLeft = slidesContainer.scrollLeft;
               const slideWidth = slidesContainer.clientWidth;
-      
               const index = Math.round(scrollLeft / slideWidth);
       
-              dots.forEach((dot, i) => {
-                dot.classList.toggle("active", i === index);
-              });
+              if (index !== current) {
+                showSlide(index);
+              }
             });
           });
         });
-      </script>            
+      </script>                  
 </body>
 </html>
