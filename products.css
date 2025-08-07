@@ -4,7 +4,7 @@ body {
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  overflow-x: hidden;
 }
 
 /* Page Container */
@@ -12,7 +12,9 @@ body {
   display: flex;
   min-height: 100vh;
   background-color: #ffffff;
-  flex-direction: row; /* Default to row for desktop */
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Left column */
@@ -38,16 +40,16 @@ body {
   z-index: 1;
   overflow: hidden;
   background-color: #ffffff;
-  justify-content: center; /* Center content vertically on desktop */
+  justify-content: center;
   box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
 }
 
 /* Logo Link */
 .logo-link {
-  display: block; /* Ensure it takes full width of left column */
-  text-align: center; /* Center the logo */
-  padding: 20px 0; /* Add some padding */
+  display: block;
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* Logo */
@@ -66,7 +68,6 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  margin-bottom: 20px; /* Add some space below navbar */
   flex-wrap: wrap;
   position: fixed;
   top: 0;
@@ -75,8 +76,10 @@ body {
   padding: 10px 20px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  z-index: 1000; /* Higher z-index to stay above content */
   border-bottom: 5px solid transparent;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar a {
@@ -95,19 +98,23 @@ body {
 /* Content Section */
 .content {
   text-align: center;
-  padding: 0 20px; /* Add horizontal padding */
+  padding: 80px 20px 20px; /* Increased top padding to clear navbar */
   position: relative;
   z-index: 2;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .company-name {
-  font-size: 48px;
-  margin: 0;
+  font-size: 3.5vw;
+  max-width: 90%;
+  margin: 0 auto 20px;
   color: #222;
   transition: transform 0.3s ease, color 0.3s ease;
+  line-height: 1.2;
 }
 .content:hover .company-name {
-  transform: scale(1.1);
+  transform: scale(1.05);
   background: linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
   -webkit-background-clip: text;
   background-clip: text;
@@ -119,15 +126,17 @@ body {
   margin: 20px auto;
   color: #666;
   max-width: 600px;
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.6;
+  text-align: center;
 }
 
-/* Product Sections (Pages 2–13) */
+/* Product Sections */
 .product-section {
   width: 100%;
   padding: 40px 20px;
   background-color: #f9f9f9;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .product-item {
@@ -137,6 +146,7 @@ body {
   justify-content: center;
   max-width: 1200px;
   margin: 20px auto;
+  box-sizing: border-box;
 }
 
 .product-image,
@@ -149,6 +159,7 @@ body {
 
 .product-image {
   text-align: center;
+  max-width: 100%;
 }
 
 .product-image img {
@@ -156,12 +167,12 @@ body {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-image:hover img {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .product-description h2 {
@@ -178,209 +189,66 @@ body {
   text-align: left;
 }
 
-
-/* Responsive Design (Mobile View) */
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column; /* Stack logo and content */
-      min-height: auto; /* Adjust height for stacked content */
-      overflow: hidden; /* Prevent horizontal scroll */
-  }
-
-  .left-column {
-      width: 100%;
-      box-shadow: none;
-      border-right: none;
-      border-bottom: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
-      padding: 15px;
-      /* Force logo to be visually first */
-      display: flex;
-      order: -1;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .logo-link {
-      padding: 15px 0 10px; /* Adjust logo padding on mobile */
-  }
-
-  .right-column {
-      width: 100%;
-      padding: 15px;
-      box-shadow: none;
-      /* Ensure navigation and content come after logo */
-      display: flex;
-      order: 0;
-      flex-direction: column;
-  }
-
-  .navbar {
-      position: sticky; /* Use sticky for mobile nav */
-      top: 0;
-      z-index: 10;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px;
-      border-bottom: none;
-      box-shadow: none;
-      gap: 10px;
-      margin-bottom: 10px; /* Adjust margin below mobile nav */
-  }
-
-  .content {
-      margin-top: 20px;
-      padding: 0 15px; /* Adjust content padding on mobile */
-      text-align: center;
-  }
-
-  .company-name {
-      font-size: 32px;
-  }
-
-  .description {
-      font-size: 16px;
-      max-width: 90%;
-  }
-
-  .product-item {
-      flex-direction: column; /* Stack image and description */
-  }
-
-  .product-image,
-  .product-description {
-      width: 100%;
-      text-align: center;
-      min-width: auto;
-      padding: 15px; /* Adjust product section padding on mobile */
-  }
-
-  .product-description h2 {
-      font-size: 26px;
-      text-align: center;
-  }
-
-  .product-description p {
-      font-size: 16px;
-      text-align: left; /* Keep text left-aligned for readability */
-  }
+/* Related Articles Section */
+.related-articles {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-
-/* Footer Styles */
-footer.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(to right, #007BFF, #00C2FF, #00FFAA);
-  color: white;
-  padding: 15px 30px;
-  font-size: 0.95rem;
-  flex-wrap: wrap;
+.related-articles h2 {
+  font-size: 32px;
+  color: #007BFF;
+  margin-bottom: 20px;
 }
 
-footer .footer-left,
-footer .footer-right {
-  display: flex;
-  align-items: center;
+.related-articles ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-footer .footer-left a,
-footer .footer-right a {
-  color: white;
+.related-articles li {
+  margin: 10px 0;
+}
+
+.related-articles a {
   text-decoration: none;
+  color: #333;
+  font-size: 18px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-footer .footer-left a:hover,
-footer .footer-right a:hover {
-  color: #000;
+.related-articles a:hover {
+  color: #007BFF;
 }
 
-footer .footer-left i,
-footer .footer-right i {
-  margin-right: 8px;
-  font-size: 1rem;
-}
-
-footer .footer-center {
-  text-align: center;
-  flex-grow: 1;
-  padding: 5px 10px;
-  color: #fff;
-}
-
-/* Responsive Footer */
-@media (max-width: 768px) {
-  footer.footer {
-      flex-direction: column;
-      text-align: center;
-      padding: 15px 20px; /* Adjust footer padding for mobile */
-      font-size: 0.9rem; /* Adjust footer font size for mobile */
-  }
-
-  footer .footer-left,
-  footer .footer-right,
-  footer .footer-center {
-      margin: 5px 0;
-      justify-content: center;
-  }
-}
-
-/* Floating WhatsApp Button */
-.whatsapp-float {
-  position: fixed;
-  bottom: 110px; /* Slightly above the FAQ bubble */
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  z-index: 999;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-/* Adjust on smaller screens */
-@media (max-width: 768px) {
-  .whatsapp-float {
-      bottom: 100px;
-      right: 15px;
-      width: 50px;
-      height: 50px;
-  }
-}
-
-
-
-/* === Image Slider === */
+/* Image Slider */
 .slider {
   position: relative;
   width: 100%;
   max-width: 500px;
   margin: auto;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .slides {
   display: flex;
   transition: transform 0.5s ease;
+  overflow-x: hidden;
 }
 
 .slide {
-  min-width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
   display: none;
   border-radius: 12px;
+  box-sizing: border-box;
 }
 
 .slide.active {
@@ -451,32 +319,243 @@ footer .footer-center {
   background-color: #007BFF;
 }
 
-/* === Mobile View === */
+/* Responsive Design (Mobile View) */
 @media (max-width: 768px) {
-  .slider-controls, .thumbnails {
-    display: none;
+  .container {
+      flex-direction: column;
+      min-height: auto;
+      overflow-x: hidden;
+      width: 100%;
   }
 
-  .dots {
-    display: block;
+  .left-column {
+      width: 100%;
+      box-shadow: none;
+      border-right: none;
+      border-bottom: 5px solid linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
+      padding: 15px;
+      display: flex;
+      order: -1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
   }
 
-  .slide {
-    display: block;
+  .logo-link {
+      padding: 15px 0 10px;
+  }
+
+  .right-column {
+      width: 100%;
+      padding: 15px;
+      box-shadow: none;
+      display: flex;
+      order: 0;
+      flex-direction: column;
+      overflow-x: hidden;
+  }
+
+  .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      border-bottom: none;
+      box-shadow: none;
+      gap: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+  }
+
+  .content {
+      margin-top: 60px; /* Offset for sticky navbar */
+      padding: 15px;
+      text-align: center;
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .company-name {
+      font-size: 8vw;
+      max-width: 95%;
+      margin: 0 auto 15px;
+      text-align: center;
+  }
+
+  .description {
+      font-size: 16px;
+      max-width: 95%;
+      margin: 15px auto;
+      text-align: center;
+  }
+
+  .content h2,
+  .content p {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+
+  .product-item {
+      flex-direction: column;
+      width: 100%;
+      margin: 10px auto;
+  }
+
+  .product-image,
+  .product-description {
+      width: 100%;
+      text-align: center;
+      min-width: auto;
+      padding: 15px;
+  }
+
+  .product-description h2 {
+      font-size: 26px;
+      text-align: center;
+  }
+
+  .product-description p {
+      font-size: 16px;
+      text-align: left;
+  }
+
+  .slider {
+      max-width: 100%;
+      overflow-x: hidden;
   }
 
   .slides {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
   }
 
   .slide {
-    scroll-snap-align: center;
-    flex: 0 0 100%;
+      display: block;
+      flex: 0 0 100%;
+      max-width: 100%;
+      scroll-snap-align: center;
+  }
+
+  .slider-controls, .thumbnails {
+      display: none;
+  }
+
+  .dots {
+      display: block;
+  }
+
+  .related-articles h2 {
+      font-size: 26px;
+      text-align: center;
+  }
+
+  .related-articles a {
+      font-size: 16px;
   }
 }
 
+/* Footer Styles */
+footer.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #007BFF, #00C2FF, #00FFAA);
+  color: white;
+  padding: 15px 30px;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer .footer-left,
+footer .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-left a,
+footer .footer-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .footer-left a:hover,
+footer .footer-right a:hover {
+  color: #000;
+}
+
+footer .footer-left i,
+footer .footer-right i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+footer .footer-center {
+  text-align: center;
+  flex-grow: 1;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer.footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 0.9rem;
+  }
+
+  footer .footer-left,
+  footer .footer-right,
+  footer .footer-center {
+      margin: 5px 0;
+      justify-content: center;
+  }
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 110px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Adjust on smaller screens */
+@media (max-width: 768px) {
+  .whatsapp-float {
+      bottom: 100px;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+  }
+}
 
 /* Inquire/Contact Us Button */
 .contact-btn {
@@ -496,9 +575,6 @@ footer .footer-center {
   background: linear-gradient(135deg, #007BFF, #00C2FF, #00FFAA);
   color: #fff;
 }
-
-
-
 
 /* Image Zoom Modal */
 .image-zoom-modal {
