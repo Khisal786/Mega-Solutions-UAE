@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<article class="post-container">
+    <nav class="breadcrumbs">
+        <a href="/">Home</a> / <a href="/blog">Library</a> / <span>{{ page.title }}</span>
+    </nav>
+
+    <header class="post-header">
+        <span class="post-category">{{ page.category }}</span>
+        <h1>{{ page.title }}</h1>
+        <div class="post-meta">
+            <i class="far fa-calendar-alt"></i> {{ page.date | date: "%B %d, %Y" }} | 
+            <i class="far fa-clock"></i> {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read
+        </div>
+    </header>
+
+    {% if page.image %}
+    <div class="post-featured-image">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+
+    <div class="post-content-wrapper">
+        <div class="post-content">
+            {{ content }}
+        </div>
+
+        <aside class="post-sidebar">
+            <div class="sidebar-cta">
+                <h3>Need this Part?</h3>
+                <p>We stock genuine Jenbacher components ready for export to Bangladesh & Indonesia.</p>
+                <a href="/contact" class="contact-btn">Get a Quote</a>
+            </div>
+            
+            <div class="sidebar-box">
+                <h4>Quick Navigation</h4>
+                <ul class="post-toc">
+                    <li><a href="/products">View Master Catalog</a></li>
+                    <li><a href="https://wa.me/971566240969">Chat with Expert</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="post-footer">
+        <hr>
+        <h3>Related Technical Guides</h3>
+        <div class="blog-grid">
+            {% assign related = site.posts | where_exp: "item", "item.url != page.url" | limit: 2 %}
+            {% for post in related %}
+                {% include blog-card.html 
+                    title=post.title 
+                    url=post.url 
+                    image=post.image 
+                    category=post.category 
+                    date=post.date 
+                    excerpt=post.excerpt 
+                %}
+            {% endfor %}
+        </div>
+    </footer>
+</article>
