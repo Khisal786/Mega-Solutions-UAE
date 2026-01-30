@@ -1,0 +1,5 @@
+<a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+<a href="{{ '/products/' | relative_url }}" class="{% if page.url contains 'products' %}active{% endif %}">Spare Parts</a>
+<a href="{{ '/blog/' | relative_url }}" class="{% if page.url contains 'blog' %}active{% endif %}">Technical Library</a>
+<a href="{{ '/about/' | relative_url }}" class="{% if page.url contains 'about' %}active{% endif %}">About Us</a>
+<a href="{{ '/contact/' | relative_url }}" class="{% if page.url contains 'contact' %}active{% endif %}">Contact</a>

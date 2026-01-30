@@ -1,0 +1,60 @@
+{% if include.images %}
+    {% assign raw_images = include.images %}
+{% else %}
+    {% assign raw_images = include.image %}
+{% endif %}
+
+{% assign image_list = raw_images | split: ',' %}
+{% assign clean_title = include.title | strip_html | strip %}
+
+<section class="product-section">
+    <div class="product-item">
+        <div class="product-image">
+            <div class="slider">
+                <div class="slides">
+                    {% if raw_images %}
+                        {% for img in image_list %}
+                            {% comment %} Clean the path: remove formatting junk and spaces {% endcomment %}
+                            {% assign clean_path = img | replace: '[', '' | replace: ']', '' | replace: '"', '' | replace: "'", "" | strip %}
+                            
+                            <div class="slide {% if forloop.first %}active{% endif %}">
+                                <img src="{{ clean_path | relative_url }}" 
+                                     alt="{{ clean_title }} - Image {{ forloop.index }}" 
+                                     onclick="openZoom(this.src)" 
+                                     style="cursor: zoom-in;"
+                                     loading="lazy">
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="slide active">
+                            <p>No image available</p>
+                        </div>
+                    {% endif %}
+                </div>
+                
+                {% if image_list.size > 1 %}
+                <div class="slider-controls">
+                    <button class="prev" aria-label="Previous image">❮</button>
+                    <button class="next" aria-label="Next image">❯</button>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="product-description">
+            {% comment %} 
+               We use 'display: block' logic here. If the user passed <h2> inside the title, 
+               Liquid handles it, but we ensure it remains semantic.
+            {% endcomment %}
+            <div class="product-title-wrapper">
+                {{ include.title }}
+            </div>
+            <div class="product-text">
+                {{ include.description }}
+            </div>
+            <a href="https://wa.me/971566240969" class="contact-btn" target="_blank" rel="noopener">
+                Inquire via WhatsApp
+            </a>
+        </div>              
+    </div>
+</section>

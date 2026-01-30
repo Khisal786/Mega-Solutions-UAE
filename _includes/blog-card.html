@@ -1,0 +1,14 @@
+<div class="blog-card">
+    <div class="blog-card-image">
+        <img src="{{ include.image | relative_url }}" alt="{{ include.title }}">
+        <span class="blog-category">{{ include.category }}</span>
+    </div>
+    <div class="blog-card-body">
+        <div class="blog-date">{{ include.date | date: "%B %d, %Y" }}</div>
+        <h3>{{ include.title }}</h3>
+        <p>{{ include.excerpt | strip_html | truncatewords: 25 }}</p>
+        <a href="{{ include.url | relative_url }}" class="read-more main-link">
+            Read Full Guide <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
