@@ -1,86 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Mega Solutions</title>
-    <link rel="stylesheet" href="blog.css" />
-    <link rel="stylesheet" href="chatbot.css" />
-    <script src="chatbot.js"></script>
-    <meta name="description" content="Read the latest blogs from Mega Solutions about Jenbacher Gas Engines and spare parts.">
-    <link rel="icon" type="image/x-icon" href="favicon.ico.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+---
+layout: default
+title: Technical Library - Mega Solutions UAE
+permalink: /blog/
+---
 
-<body>
-    <div class="container">
-        <header class="left-column">
-            <a href="index.html" class="logo-link">
-                <img src="mega_solutions_logo.jpg" alt="Mega Solutions Company Logo" class="logo" />
-            </a>
-        </header>
-
-        <main class="right-column">
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="products.html">Spare Parts</a>
-                <a href="blog.html">Blog Posts</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-
-            <section class="content">
-                <h1 class="page-title">Our Blog</h1>
-                <p class="page-description">Insights and updates on Jenbacher engines and industry trends.</p>
-
-                <div class="blog-list">
-
-                    <a href="blog1.html" class="blog-card">
-                        <img src="product_1.png" alt="Blog 1" />
-                        <div class="blog-text">
-                            <h2>The Future of Gas Engines: Innovations Behind INNIO’s Jenbacher Technology</h2>
-                            <p>As the world transitions towards more sustainable energy solutions, gas engines continue to play...</p>
-                        </div>
-                    </a>
-
-                    <a href="blog2.html" class="blog-card">
-                        <img src="product_2.png" alt="Blog 2" />
-                        <div class="blog-text">
-                            <h2>Common Spare Parts and Their Functions</h2>
-                            <p>A quick guide to the essential Jenbacher spare parts every operator should know.</p>
-                        </div>
-                    </a>
-
-                    <a href="blog3.html" class="blog-card">
-                        <img src="product_3.png" alt="Blog 3" />
-                        <div class="blog-text">
-                            <h2>How to Maintain Peak Engine Efficiency</h2>
-                            <p>Learn best practices for maintaining your Jenbacher gas engine and reducing downtime.</p>
-                        </div>
-                    </a>
-
-                </div>
-            </section>
-        </main>
+<section class="hero hero-small">
+    <div class="hero-content">
+        <h1 class="hero-title">TECHNICAL LIBRARY</h1>
+        <p class="hero-subtitle">
+            Expert insights on Jenbacher engine maintenance, global logistics, and spare parts sourcing for Bangladesh and Indonesia.
+        </p>
     </div>
+</section>
 
-    <footer class="footer">
-        <div class="footer-left">
-            <a href="https://wa.me/971566240969" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
+<div class="main-content">
+    <div class="content">
+        <div class="library-meta">
+            <span>Showing all technical guides</span>
         </div>
-        <div class="footer-center">
-            &copy; 2004–2025 MEGA SOLUTIONS. All rights reserved.
-        </div>
-        <div class="footer-right">
-            <a href="tel:+971566240969">
-                <i class="fas fa-phone-alt"></i> +971 56 624 0969
-            </a>
-        </div>
-    </footer>
-    <a href="https://wa.me/971566240969" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-        <i class="fab fa-whatsapp fa-lg"></i>
-    </a>
-</body>
 
-</html>
+        <div class="blog-grid">
+            {% for post in site.posts %}
+                {% include blog-card.html 
+                    title=post.title 
+                    url=post.url 
+                    image=post.image 
+                    category=post.category 
+                    date=post.date 
+                    excerpt=post.excerpt 
+                %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

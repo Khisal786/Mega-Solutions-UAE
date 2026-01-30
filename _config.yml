@@ -1,0 +1,20 @@
+title: Mega Solutions UAE
+description: Independent global stockist of Jenbacher gas engine spare parts (Series 3 & 6). Serving Bangladesh, Indonesia, and the UAE.
+url: "https://megasolutionsuae.com"
+baseurl: ""
+
+# SEO & Social
+linkedin_username: mega-solutions-uae
+author: Mega Solutions Team
+
+# Build Settings
+markdown: kramdown
+permalink: /blog/:title/
+
+# Exclude files from the GitHub Pages build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - .jekyll-metadata
+  - README.md
