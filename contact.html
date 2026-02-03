@@ -44,38 +44,42 @@ description: Inquiry for Jenbacher parts export to Europe, Russia, North & South
         <h2>Send us a Message</h2>
         <p style="margin-bottom: 25px; color: #666;">Our parts specialists typically respond within 24 hours.</p>
         
-        <form class="contact-form" action="https://formsubmit.co/info@MegaSolutionsUAE.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required />
-                </div>
-                <div class="form-group">
-                    <label for="org">Organization</label>
-                    <input type="text" id="org" name="organization" placeholder="Company Name" required />
-                </div>
-            </div>
+<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7524776f-59ad-4b4a-a887-bf80690acaa7">
+    
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="phone">Contact Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+971..." required />
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="email@company.com" required />
-                </div>
-            </div>
+    <input type="hidden" name="subject" value="New Inquiry from MegaSolutionsUAE.com">
 
-            <div class="form-group">
-                <label for="msg">How can we help?</label>
-                <textarea id="msg" name="message" rows="5" placeholder="Specify Part Numbers or Engine Model (e.g. J320, J620)..." required></textarea>
-            </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+            <label for="org">Organization</label>
+            <input type="text" id="org" name="organization" placeholder="Company Name" required />
+        </div>
+    </div>
 
-            <button type="submit" class="contact-btn" style="width: 100%;">Send Inquiry</button>
-        </form>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+971..." required />
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="email@company.com" required />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="msg">How can we help?</label>
+        <textarea id="msg" name="message" rows="5" placeholder="Specify Part Numbers or Engine Model (e.g. J320, J620)..." required></textarea>
+    </div>
+
+    <button type="submit" class="contact-btn" style="width: 100%;">Send Inquiry</button>
+</form>
     </div>
 
     <div class="export-sidebar">
