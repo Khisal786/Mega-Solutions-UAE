@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Optimal Thermal Control: Jacket Water Pumps"
-date: 2025-05-18 08:00:00 +0400
-categories: [Engine Focus, Technical Insights]
+date: 2025-05-18
 image: /assets/images/blog/jacket-water-pumps.webp
+description: "Prevent engine overheating and cavitation damage with high-flow jacket water cooling pumps and overhaul kits."
+categories: [Engine Focus, Technical Insights]
 ---
 
 An industrial gas engine generates immense thermal energy—only a fraction of which converts into useful electrical output. The rest must be safely dissipated. Your jacket water cooling system acts as the engine's primary thermal regulator, and at the heart of this system is the **jacket water pump**. 
