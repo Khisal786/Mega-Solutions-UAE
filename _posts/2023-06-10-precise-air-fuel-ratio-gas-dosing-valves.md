@@ -3,6 +3,7 @@ layout: post
 title: "Precise Air-Fuel Ratio: Gas Dosing Valves in Industrial Engines"
 date: 2023-06-10 09:00:00 +0400
 categories: [Engine Focus, Technical Insights]
+image: /assets/images/blog/gas-dosing-valves.webp
 ---
 
 Maintaining a precise air-fuel ratio (AFR) is the holy grail of modern gas engine management. Whether you are running a lean-burn Jenbacher unit or an independent co-generation setup, even minor fluctuations in fuel delivery can throw your combustion dynamics completely off balance. 
