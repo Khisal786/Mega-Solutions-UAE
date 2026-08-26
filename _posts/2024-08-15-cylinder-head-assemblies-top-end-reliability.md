@@ -3,6 +3,7 @@ layout: post
 title: "Top-End Reliability: Cylinder Head Assemblies"
 date: 2024-08-15 11:00:00 +0400
 categories: [Engine Focus, Maintenance]
+image: /assets/images/blog/cylinder-head-assemblies.webp
 ---
 
 The cylinder head is arguably the most thermally stressed component in any industrial gas engine. Juggling extreme combustion pressures, valve actuation mechanics, and intricate cooling water jackets, it bears the brunt of every power stroke. 
