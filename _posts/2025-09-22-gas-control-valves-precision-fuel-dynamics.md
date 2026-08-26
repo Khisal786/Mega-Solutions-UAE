@@ -4,7 +4,7 @@ title: "Precision Fuel Dynamics: Gas Control Valves"
 date: 2025-09-22
 image: /assets/images/blog/gas-control-valves.webp
 description: "Eliminate fuel instability and hunting with high-spec gas control valves designed for rapid dynamic response."
-categories: [Spare Parts, Technical Insights]
+category: Spare Parts
 ---
 
 In power generation, fuel delivery must be governed with microscopic precision. Gas control valves regulate the exact volume of gaseous fuel entering the intake manifold or pre-combustion chambers relative to engine load and ambient conditions. 
