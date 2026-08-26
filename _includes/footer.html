@@ -1,6 +1,3 @@
-<!-- Google Preferred Source Script loader -->
-<script src="https://www.gstatic.com/culturalinstitute/preferredsource/button.js" async></script>
-
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-item footer-whatsapp">
@@ -16,10 +13,19 @@
             <p>&copy; 2004-{{ "now" | date: "%Y" }} Mega Solutions UAE. All Rights Reserved.</p>
         </div>
 
-        <!-- Preferred Source Wrapper with Contextual Copy -->
+        <!-- Preferred Source Wrapper with Contextual Copy & Desktop Fixes -->
         <div class="footer-item preferred-source-wrapper" style="margin: 20px 0; text-align: center; width: 100%;">
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 8px;">Never miss our latest technical guides and global energy insights:</p>
-            <google-preferred-source domain="megasolutionsuae.com"></google-preferred-source>
+            
+            <div style="display: inline-block; pointer-events: auto; position: relative; z-index: 10;">
+                <google-preferred-source domain="megasolutionsuae.com"></google-preferred-source>
+            </div>
+
+            <div style="margin-top: 8px;">
+                <a href="https://www.google.com/preferences/source?q=megasolutionsuae.com" target="_blank" rel="noopener" style="font-size: 0.8rem; color: #0056b3; text-decoration: underline;">
+                    Having trouble clicking? Add us directly on Google.
+                </a>
+            </div>
         </div>
 
         <div class="footer-item footer-contact">
