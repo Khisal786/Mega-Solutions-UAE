@@ -4,7 +4,7 @@ title: "Technical Deep-Dive: Maintaining Reliability in Series 6 Gas Engines"
 date: 2023-04-12
 image: /assets/images/blog/jenbacher-series-6-pre-combustion-chamber-reliability.webp
 description: "An analysis of the high-wear components in Series 6 engines and how strategic part replacement ensures long-term operational stability."
-categories: [Technical, Maintenance]
+category: Maintenance
 ---
 
 The **Series 6 gas engine** (including the 612, 616, and 620 models) is widely regarded as a masterpiece of industrial engineering. Known for its high power density and efficiency, it is the primary choice for large-scale power plants across Asia and Europe. However, with high performance comes the need for a rigorous, technical approach to maintenance.
