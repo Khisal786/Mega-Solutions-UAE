@@ -43,11 +43,20 @@ layout: default
         </aside>
     </div>
 
-    <!-- Preferred Source Article Banner (Placed right after article content & sidebar wrapper) -->
+    <!-- Preferred Source Article Banner with Desktop Pointer Fix & Fallback -->
     <div class="article-preferred-source-box" style="margin: 40px 0 20px 0; padding: 20px; background: #f9f9f9; border-left: 4px solid #0056b3; border-radius: 4px; text-align: center;">
         <h4 style="margin: 0 0 8px 0; font-size: 1rem; color: #333;">Enjoyed this technical insight?</h4>
         <p style="font-size: 0.85rem; color: #666; margin-bottom: 12px;">Ensure future updates, maintenance guides, and Jenbacher availability alerts surface directly in your Google AI Overviews and searches.</p>
-        <google-preferred-source domain="megasolutionsuae.com"></google-preferred-source>
+        
+        <div style="display: inline-block; pointer-events: auto; position: relative; z-index: 10;">
+            <google-preferred-source domain="megasolutionsuae.com"></google-preferred-source>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <a href="https://www.google.com/preferences/source?q=megasolutionsuae.com" target="_blank" rel="noopener" style="font-size: 0.8rem; color: #0056b3; text-decoration: underline;">
+                Having trouble clicking? Click here to add us directly on Google.
+            </a>
+        </div>
     </div>
 
     <footer class="post-footer">
