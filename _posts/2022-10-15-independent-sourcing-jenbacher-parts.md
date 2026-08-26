@@ -4,7 +4,7 @@ title: "The Strategic Advantage of Independent Sourcing for Jenbacher Engine Par
 date: 2022-10-15
 image: /assets/images/blog/mega-solutions-warehouse-sharjah.webp
 description: "Why power plant operators are turning to independent global stockists for their Jenbacher Type 3 and Type 6 maintenance needs."
-categories: [Supply Chain, Maintenance]
+category: Supply Chain
 ---
 
 In the global power generation industry, downtime is the enemy of profitability. When a Jenbacher Type 6 engine requires a critical component—be it a pre-combustion chamber or a cylinder head—the traditional supply chain often presents hurdles such as long lead times and rigid procurement paths.
