@@ -4,7 +4,7 @@ title: "Crankshaft Protection: Main and Rod Bearings"
 date: 2025-01-12
 image: /assets/images/blog/main-rod-bearings.webp
 description: "Protect expensive engine crankshafts from journal scoring with precision-engineered main and connecting rod bearing sets."
-categories: [Maintenance, Technical Insights]
+category: Maintenance
 ---
 
 Your engine's crankshaft is one of the most expensive single components in your power plant. Yet, its survival entirely depends on layers of soft, sacrificial babbitt material sitting inside your main and connecting rod bearings. 
