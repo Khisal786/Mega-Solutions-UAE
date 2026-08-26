@@ -3,6 +3,7 @@ layout: post
 title: "Peak Combustion Seal: Piston and Liner Kits"
 date: 2024-10-02 09:15:00 +0400
 categories: [Spare Parts, Technical Insights]
+image: /assets/images/blog/piston-liner-kits.webp
 ---
 
 Inside the block of a high-output industrial gas engine, the piston and cylinder liner form the ultimate sealing interface. Together, they must contain thousands of pounds of explosive combustion pressure while moving at high reciprocating speeds with microscopic oil film tolerances. 
