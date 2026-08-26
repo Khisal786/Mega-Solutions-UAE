@@ -4,7 +4,7 @@ title: "Precise Thermal Monitoring: Exhaust Thermocouples"
 date: 2023-11-05
 image: /assets/images/blog/exhaust-thermocouples.webp
 description: "Catch engine misfires early and prevent catastrophic thermal overloads with high-accuracy exhaust gas thermocouples."
-categories: [Maintenance, Technical Insights]
+category: Maintenance
 ---
 
 In heavy-duty power generation, silence is not always golden—sometimes, it means a sensor has failed quietly while an engine is operating blind. Exhaust thermocouples are your plant’s front-line defense against catastrophic thermal overloads. By tracking the exhaust gas temperature of every single cylinder in real time, these high-accuracy sensors allow operators to catch misfires, injection anomalies, and turbocharger imbalances before they escalate into expensive metallurgical damage.
