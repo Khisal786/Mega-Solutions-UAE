@@ -3,6 +3,7 @@ layout: post
 title: "Maximum Spark Efficiency: Spark Plugs in Biogas Plants"
 date: 2023-02-14 08:00:00 +0400
 categories: [Maintenance, Technical Insights]
+image: /assets/images/blog/spark-plugs-biogas.webp
 ---
 
 If you manage a continuous-duty biogas or landfill gas power plant, you already know that your gas engine’s ignition system lives in a brutal environment. Unlike standard natural gas applications, biogas carries trace contaminants like siloxanes, hydrogen sulfide, and moisture. When these elements meet high combustion temperatures, they wreak absolute havoc on your spark plugs.
