@@ -3,6 +3,7 @@ layout: post
 title: "Instant Cranking Power: Heavy-Duty Starter Motors"
 date: 2026-03-04 07:30:00 +0400
 categories: [Spare Parts, Maintenance]
+image: /assets/images/blog/heavy-duty-starter-motors.webp
 ---
 
 When grid power fails, your emergency backup generator must roar to life instantly. That critical first rotation relies entirely on your heavy-duty electric or pneumatic **starter motor**. 
