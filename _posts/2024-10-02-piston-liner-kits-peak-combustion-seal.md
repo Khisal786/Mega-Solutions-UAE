@@ -4,7 +4,7 @@ title: "Peak Combustion Seal: Piston and Liner Kits"
 date: 2024-10-02
 image: /assets/images/blog/piston-liner-kits.webp
 description: "Eliminate oil blow-by and liner scuffing using heavy-duty matched piston and cylinder liner kits for gas engines."
-categories: [Spare Parts, Technical Insights]
+category: Spare Parts
 ---
 
 Inside the block of a high-output industrial gas engine, the piston and cylinder liner form the ultimate sealing interface. Together, they must contain thousands of pounds of explosive combustion pressure while moving at high reciprocating speeds with microscopic oil film tolerances. 
