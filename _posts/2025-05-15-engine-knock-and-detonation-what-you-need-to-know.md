@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Engine Knock and Detonation: What Industrial Operators Need to Know"
+title: "Engine Knock & Detonation: Operator Guide | Mega Solutions UAE"
 date: 2025-05-15
 image: /assets/images/blog/engine-knock-detonation.webp
 description: "An expert engineering breakdown of gas engine knock, detonation causes, and how to protect pistons and cylinder heads from thermal destruction."
