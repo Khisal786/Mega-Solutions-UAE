@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How Temperature Affects Generator Engine Performance and Efficiency"
+title: "How Temperature Affects Generator Performance | Mega Solutions UAE"
 date: 2026-05-22
 image: /assets/images/blog/temperature-affects-generator-performance.webp
 description: "An expert engineering analysis of how ambient and operating temperatures influence industrial gas generator performance, cooling, and fuel efficiency."
