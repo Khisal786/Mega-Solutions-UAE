@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2026 Maintenance Outlook: Ensuring Energy Resilience in Asia and Beyond"
+title: "2026 Energy Maintenance Outlook: Asia | Mega Solutions UAE"
 date: 2026-02-05
 image: /assets/images/blog/jenbacher-maintenance-2026.webp
 category: Technical Insights
