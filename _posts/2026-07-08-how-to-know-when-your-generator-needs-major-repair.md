@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Know When Your Generator Needs a Major Repair vs. Minor Fix"
+title: "Generator Major Repair vs. Minor Fix Guide | Mega Solutions UAE"
 date: 2026-07-08
 image: /assets/images/blog/generator-major-repair-vs-minor.webp
 description: "An expert diagnostic guide for plant managers on distinguishing between routine minor adjustments and major industrial gas engine overhauls."
