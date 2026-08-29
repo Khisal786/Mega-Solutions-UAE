@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Natural Gas Engine Maintenance: A Complete Guide for Plant Operators"
+title: "Natural Gas Engine Maintenance Guide | Mega Solutions UAE"
 date: 2023-12-05
 image: /assets/images/blog/natural-gas-engine-maintenance-guide.webp
 description: "A comprehensive master guide on maintaining industrial natural gas engines, managing fuel purity, and maximizing operational lifespan."
