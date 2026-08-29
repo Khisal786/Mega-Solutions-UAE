@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What Spare Parts Do I Need to Stock for My Generator? An Essential Inventory Guide"
+title: "Essential Generator Spare Parts Inventory Guide | Mega Solutions UAE"
 date: 2024-09-05
 image: /assets/images/blog/generator-spare-parts-inventory.webp
 description: "A strategic inventory guide for plant managers on stocking essential industrial gas generator spare parts to prevent costly downtime."
