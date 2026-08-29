@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why Does My Generator Lose Power Over Time? Causes and Solutions"
+title: "Why Generators Lose Power: Causes & Solutions | Mega Solutions UAE"
 date: 2026-04-10
 image: /assets/images/blog/generator-losing-power.webp
 description: "An engineering troubleshooting guide on identifying the root causes of power degradation in industrial gas generators and restoring output capacity."
