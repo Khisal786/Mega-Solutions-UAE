@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Importance of Ignition System Timing and Spark Plug Maintenance"
+title: "Ignition Timing & Spark Plug Maintenance | Mega Solutions UAE"
 date: 2024-08-13
 image: /assets/images/blog/ignition-system-timing-spark-plug-maintenance.webp
 description: "An expert maintenance guide on maximizing combustion efficiency, preventing engine knock, and managing spark plug wear in industrial gas engines."
