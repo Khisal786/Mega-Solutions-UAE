@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Find Compatible Replacement Parts for Older Generators"
+title: "Sourcing Parts for Older Generators | Mega Solutions UAE"
 date: 2026-03-02
 image: /assets/images/blog/compatible-parts-older-generators.webp
 description: "An expert sourcing guide for finding exact-match compatible replacement parts for legacy industrial gas generators and older engine series."
