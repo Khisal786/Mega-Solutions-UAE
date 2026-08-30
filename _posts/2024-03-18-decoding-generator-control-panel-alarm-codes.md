@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Decoding Generator Control Panel Alarm Codes: A Plant Operator's Guide"
+title: "Decoding Generator Control Panel Alarms | Mega Solutions UAE"
 date: 2024-03-18
 image: /assets/images/blog/decoding-generator-control-panel-alarms.webp
 description: "An expert diagnostic guide on interpreting digital controller alarm codes, understanding warning priorities, and responding to system faults."
