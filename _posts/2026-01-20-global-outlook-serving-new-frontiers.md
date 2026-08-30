@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2026 Global Outlook: Serving New Frontiers from Russia to the Americas"
+title: "2026 Global Energy Supply Chain Outlook | Mega Solutions UAE"
 date: 2026-01-20
 image: /assets/images/blog/2026-global-energy-supply-chain-outlook.webp
 category: Market Trends
