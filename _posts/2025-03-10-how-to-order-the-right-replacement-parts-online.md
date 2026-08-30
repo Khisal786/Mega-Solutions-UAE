@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Order the Right Replacement Parts Online: A Guide for Industrial Buyers"
+title: "Guide to Ordering Generator Parts Online | Mega Solutions UAE"
 date: 2025-03-10
 image: /assets/images/blog/order-replacement-parts-online.webp
 description: "A streamlined guide for industrial plant buyers on how to accurately specify, cross-reference, and order replacement parts online without costly delays."
