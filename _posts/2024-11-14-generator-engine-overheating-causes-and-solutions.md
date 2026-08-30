@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Generator Engine Overheating: Causes, Diagnostic Steps, and Solutions"
+title: "Generator Engine Overheating Causes & Solutions | Mega Solutions UAE"
 date: 2024-11-14
 image: /assets/images/blog/generator-engine-overheating.webp
 description: "An expert engineering guide on identifying the root causes of industrial gas generator overheating and preventing catastrophic thermal damage."
