@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Jenbacher 320: Why the Series 3 Remains an Industrial Workhorse"
+title: "Jenbacher 320 Series 3 Maintenance | Mega Solutions UAE"
 date: 2023-08-20
 image: /assets/images/blog/jenbacher-320-type-3-maintenance-parts.webp
 alt: "A Jenbacher Type 320 gas engine installed in an industrial facility, maintained with premium spare parts."
