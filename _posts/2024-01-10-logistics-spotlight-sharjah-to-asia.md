@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Logistics Spotlight: Seamless Parts Delivery from Sharjah to Dhaka and Jakarta"
+title: "Sharjah to Asia Logistics for Generator Parts | Mega Solutions UAE"
 date: 2024-01-10
 image: /assets/images/blog/global-logistics-sharjah-to-asia-jenbacher-parts.webp
 alt: "Air freight logistics from Sharjah UAE hub, delivering Jenbacher engine components to Bangladesh and Indonesia."
