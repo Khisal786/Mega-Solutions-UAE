@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Troubleshooting Abnormal Vibration and Mechanical Noise in Industrial Generators"
+title: "Troubleshooting Generator Vibration & Noise | Mega Solutions UAE"
 date: 2024-06-17
 image: /assets/images/blog/troubleshooting-abnormal-vibration-noise.webp
 description: "An expert engineering guide on identifying the root causes of mechanical vibrations, bearing wear, and unusual noise in gas generators."
