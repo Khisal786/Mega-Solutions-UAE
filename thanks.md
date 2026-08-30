@@ -13,8 +13,8 @@ permalink: /thanks/
         <p>You can expect a response at your provided email within 24 hours.</p>
         
         <div style="margin-top: 30px;">
-            <a href="/" class="contact-btn" style="text-decoration: none; padding: 10px 25px;">Return to Home</a>
-            <a href="/products/" class="contact-btn" style="text-decoration: none; padding: 10px 25px; background: #333; margin-left: 10px;">Browse Spare Parts</a>
+            <a href="{{ '/' | relative_url }}" class="contact-btn" style="text-decoration: none; padding: 10px 25px;">Return                 to Home</a>
+            <a href="{{ '/products/' | relative_url }}" class="contact-btn" style="text-decoration: none; padding: 10px 25px;                 background: #333; margin-left: 10px;">Browse Spare Parts</a>
         </div>
     </div>
 </section>
