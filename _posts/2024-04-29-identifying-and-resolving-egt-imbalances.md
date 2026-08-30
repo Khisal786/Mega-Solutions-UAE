@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Identifying and Resolving Exhaust Gas Temperature (EGT) Imbalances"
+title: "Identifying & Resolving EGT Imbalances | Mega Solutions UAE"
 date: 2024-04-29
 image: /assets/images/blog/identifying-resolving-egt-imbalances.webp
 description: "An expert diagnostic guide on interpreting exhaust gas temperature variations across multi-cylinder industrial gas engines to prevent failures."
