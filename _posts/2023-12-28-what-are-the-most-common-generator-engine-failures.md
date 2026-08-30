@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What Are the Most Common Generator Engine Failures and How to Spot Them"
+title: "Common Generator Engine Failures & Detection | Mega Solutions UAE"
 date: 2023-12-28
 image: /assets/images/blog/common-generator-failures-spot.webp
 description: "An expert troubleshooting guide on identifying early warning signs of common industrial gas generator failures before they cause total shutdowns."
