@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cost-Benefit Analysis: Independent Trading vs. Traditional Procurement"
+title: "Independent Trading vs. Traditional Procurement | Mega Solutions UAE"
 date: 2024-06-05
 image: /assets/images/blog/cost-benefit-analysis-independent-engine-parts.webp
 category: Business Strategy
