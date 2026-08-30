@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Global Reach: Sourcing from Europe and the USA for the Global South"
+title: "Global Sourcing for Generator Parts | Mega Solutions UAE"
 date: 2025-03-15
 image: /assets/images/blog/global-sourcing-europe-usa-to-asia-engine-parts.webp
 category: Global Trade
