@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Identify Your Generator Model and Series for Accurate Spare Parts Sourcing"
+title: "How to Identify Your Generator Model & Series | Mega Solutions UAE"
 date: 2024-03-12
 image: /assets/images/blog/generator-model-identification.webp
 description: "A comprehensive technical guide for plant operators on locating nameplates, decoding engine series, and ordering precise OEM replacement components."
