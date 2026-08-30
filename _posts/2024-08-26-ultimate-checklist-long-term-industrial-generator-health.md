@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Ultimate Checklist for Long-Term Industrial Generator Health"
+title: "Industrial Generator Health Master Checklist | Mega Solutions UAE"
 date: 2024-08-26
 image: /assets/images/blog/ultimate-checklist-generator-health.webp
 description: "A comprehensive master checklist for plant managers on maintaining peak industrial gas generator performance, longevity, and reliability."
