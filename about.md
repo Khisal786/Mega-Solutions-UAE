@@ -64,8 +64,8 @@ permalink: /about/
         </blockquote>
 
         <div class="hero-btns" style="margin-top: 40px;">
-            <a href="{{ '/contact.html' | relative_url }}" class="contact-btn">Get in Touch</a>
-            <a href="{{ '/blog.html' | relative_url }}" class="contact-btn secondary">Technical Library</a>
+            <a href="{{ '/contact/' | relative_url }}" class="contact-btn">Get in Touch</a>
+            <a href="{{ '/blog/' | relative_url }}" class="contact-btn secondary">Technical Library</a>
         </div>
 
     </div>
