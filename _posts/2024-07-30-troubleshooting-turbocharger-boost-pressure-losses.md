@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Troubleshooting Turbocharger Boost Pressure Losses in Gas Engines"
+title: "Troubleshooting Turbocharger Boost Losses | Mega Solutions UAE"
 date: 2024-07-30
 image: /assets/images/blog/troubleshooting-turbocharger-boost-pressure-losses.webp
 description: "An expert engineering guide on identifying and resolving boost pressure drops, wastegate faults, and air leaks in industrial gas engines."
