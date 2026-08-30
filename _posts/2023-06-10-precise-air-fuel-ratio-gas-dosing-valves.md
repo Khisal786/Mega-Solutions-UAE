@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Precise Air-Fuel Ratio: Gas Dosing Valves in Industrial Engines"
+title: "Precise Air-Fuel Ratio & Gas Dosing Valves | Mega Solutions UAE"
 date: 2023-06-10
 image: /assets/images/blog/gas-dosing-valves.webp
 description: "Optimize combustion dynamics and prevent engine knocking by maintaining precise air-fuel ratios with high-spec gas dosing valves."
