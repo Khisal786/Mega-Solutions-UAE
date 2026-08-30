@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Best Practices for Generator Engine Storage and Winterization"
+title: "Generator Engine Storage & Winterization | Mega Solutions UAE"
 date: 2024-01-08
 image: /assets/images/blog/winterization-generator-storage.webp
 description: "A comprehensive engineering guide on preserving industrial gas generators during extended storage, seasonal shutdowns, or cold-weather inactivity."
