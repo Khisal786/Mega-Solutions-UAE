@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Technical Deep-Dive: Maintaining Reliability in Series 6 Gas Engines"
+title: "Technical Reliability in Series 6 Components | Mega Solutions UAE"
 date: 2023-04-12
 image: /assets/images/blog/jenbacher-series-6-pre-combustion-chamber-reliability.webp
 description: "An analysis of the high-wear components in Series 6 engines and how strategic part replacement ensures long-term operational stability."
