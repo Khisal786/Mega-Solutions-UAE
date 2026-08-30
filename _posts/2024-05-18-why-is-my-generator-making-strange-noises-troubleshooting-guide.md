@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why Is My Generator Making Strange Noises? A Troubleshooting Guide for Plant Operators"
+title: "Generator Strange Noises & Troubleshooting Guide | Mega Solutions UAE"
 date: 2024-05-18
 image: /assets/images/blog/generator-noise-troubleshooting.webp
 description: "A practical engineering guide to decoding industrial gas generator noises, identifying mechanical wear, and preventing catastrophic engine failures."
@@ -36,7 +36,7 @@ If the noise only manifests when the generator accepts heavy grid loads, the iss
 ### Building a Proactive Maintenance Culture
 Anomalous noises are your engine’s way of communicating stress. Implementing regular acoustic monitoring—combined with scheduled visual inspections and prompt replacement of high-wear seals, filters, and ignition components—protects your plant's operational continuity.
 
-When unusual wear is detected and you need genuine replacement components fast, our Sharjah-based warehouse maintains physical stock ready to bridge the gap between failure and restoration[cite: 1]. 
+When unusual wear is detected and you need genuine replacement components fast, our Sharjah-based warehouse maintains physical stock ready to bridge the gap between failure and restoration. 
 
 ---
 
