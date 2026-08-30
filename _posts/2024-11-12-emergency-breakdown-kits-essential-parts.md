@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Emergency Breakdown Kits: What Every Plant Should Have in Stock"
+title: "Emergency Breakdown Kits for Generators | Mega Solutions UAE"
 date: 2024-11-12
 image: /assets/images/blog/emergency-breakdown-kit-jenbacher-gas-engine.webp
 category: Maintenance
