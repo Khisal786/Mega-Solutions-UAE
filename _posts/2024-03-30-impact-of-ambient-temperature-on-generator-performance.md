@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Impact of Ambient Temperature and Humidity on Generator Performance"
+title: "Ambient Temperature & Generator Performance | Mega Solutions UAE"
 date: 2024-03-30
 image: /assets/images/blog/ambient-temperature-humidity-generator-impact.webp
 description: "An expert engineering analysis on how high ambient temperatures, humidity, and altitude affect industrial gas engine output and cooling efficiency."
@@ -22,4 +22,4 @@ Combustion engines rely on dense air to mix efficiently with fuel gases.
 
 ---
 
-*Note: Mega Solutions UAE is an independent trader. We are not an authorized distributor of, or affiliated with, the INNIO Jenbacher brand. All trademarks are the property of their respective owners.*
+*Note: Mega Solutions UAE is an independent trader. We are not an authorized distributor of, or affiliated with, the INNIO Jenbacher brand. All trademarks are the property of their respective owners.*s
