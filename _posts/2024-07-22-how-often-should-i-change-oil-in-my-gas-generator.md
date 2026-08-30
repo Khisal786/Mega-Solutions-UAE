@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How Often Should I Change Oil in My Gas Generator? Best Practices for Industrial Engines"
+title: "Industrial Gas Generator Oil Change Intervals & Best Practices"
 date: 2024-07-22
 image: /assets/images/blog/generator-oil-maintenance.webp
 description: "An expert maintenance guide on industrial gas generator oil change intervals, lubricant quality, and protecting high-performance engine internals."
