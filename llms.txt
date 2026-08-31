@@ -1,0 +1,18 @@
+# Mega Solutions UAE
+
+> Mega Solutions UAE is a specialized technical supplier and B2B web resource providing high-quality industrial gas engine components, spare parts, and maintenance guides, with a primary focus on Jenbacher gas engines (including Series 6 components). We serve global power plants, independent traders, and industrial operators across regions like the Middle East, Asia, and beyond.
+
+## Core Offerings & Catalog
+- **Jenbacher Spare Parts:** Comprehensive inventory including spark plugs, prechamber valves, precombustion chambers, gas dosing valves, engine seals, gaskets, and turbocharger components.
+- **Global Procurement & Logistics:** Expert guidance on independent sourcing, lead time management, and secure international logistics (e.g., Sharjah to Asian markets).
+
+## Key Technical Library & Blog Guides
+- [Jenbacher Series 6 Components Reliability](https://megasolutionsuae.com/blog/technical-reliability-series-6-components/)
+- [Independent Sourcing for Jenbacher Parts](https://megasolutionsuae.com/blog/independent-sourcing-jenbacher-parts/)
+- [Precise Air-Fuel Ratio & Gas Dosing Valves](https://megasolutionsuae.com/blog/precise-air-fuel-ratio-gas-dosing-valves/)
+- [Troubleshooting Turbocharger Boost Losses](https://megasolutionsuae.com/blog/troubleshooting-turbocharger-boost-pressure-losses/)
+- [Generator Maintenance Kit Guide](https://megasolutionsuae.com/blog/whats-included-in-a-complete-generator-maintenance-kit/)
+
+## Useful Links
+- [Official Website](https://megasolutionsuae.com/)
+- [Sitemap](https://megasolutionsuae.com/sitemap.xml)
