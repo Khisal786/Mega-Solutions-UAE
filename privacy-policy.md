@@ -35,6 +35,6 @@ description: "Privacy Policy for Mega Solutions UAE. Learn how we handle informa
         <p>We do not sell, trade, or rent your business data to third parties. Information is shared only with trusted logistics providers and shipping partners strictly necessary to fulfill your physical equipment orders.</p>
 
         <h3>5. Contact Us</h3>
-        <p>If you have any questions regarding this Privacy Policy or wish to update your business contact preferences, you can reach us directly via our <a href="/contact">Contact Page</a> or through our direct WhatsApp channel.</p>
+        <p>If you have any questions regarding this Privacy Policy or wish to update your business contact preferences, you can reach us directly via our <a href="/contact/">Contact Page</a> or through our direct WhatsApp channel.</p>
     </div>
 </article>
