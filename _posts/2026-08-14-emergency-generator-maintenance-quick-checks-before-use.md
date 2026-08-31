@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Emergency Generator Maintenance: Quick Checks Before Startup"
+title: "Generator Quick Checks Before Startup"
 date: 2026-08-14
 image: /assets/images/blog/emergency-generator-pre-start-checks.webp
 description: "A practical pre-operation inspection checklist for industrial plant operators preparing backup gas generators for emergency startup."
