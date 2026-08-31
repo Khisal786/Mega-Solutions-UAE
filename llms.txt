@@ -16,3 +16,4 @@
 ## Useful Links
 - [Official Website](https://megasolutionsuae.com/)
 - [Sitemap](https://megasolutionsuae.com/sitemap.xml)
+- [Agent Guide (.md)](https://megasolutionsuae.com/agent.md)
