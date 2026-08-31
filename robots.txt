@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Content Signals for AI Crawlers and Search Engines
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
 Sitemap: https://megasolutionsuae.com/sitemap.xml
