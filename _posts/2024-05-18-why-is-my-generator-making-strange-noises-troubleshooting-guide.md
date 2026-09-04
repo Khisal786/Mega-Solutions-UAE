@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Generator Strange Noises & Troubleshooting Guide | Mega Solutions UAE"
+title: "Generator Noise Troubleshooting Guide"
 date: 2024-05-18
 image: /assets/images/blog/generator-noise-troubleshooting.webp
 description: "A practical engineering guide to decoding industrial gas generator noises, identifying mechanical wear, and preventing catastrophic engine failures."
