@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Generator Maintenance Kit Contents & Buyer's Guide | Mega Solutions UAE"
+title: "What’s in a Generator Maintenance Kit?"
 date: 2026-06-15
 image: /assets/images/blog/generator-maintenance-kit-contents.webp
 description: "An expert guide for industrial plant buyers on the essential components, filters, and sealing elements bundled in a complete generator service kit."
