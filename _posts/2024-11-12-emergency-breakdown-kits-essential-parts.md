@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Emergency Generator Spares: How to Build a Breakdown Kit Without Overstocking"
+title: "Emergency Generator Spares Guide"
 date: 2024-11-12
 last_modified_at: 2026-09-04
 image: /assets/images/blog/emergency-breakdown-kit-jenbacher-gas-engine.webp
