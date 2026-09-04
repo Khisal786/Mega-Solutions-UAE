@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to Source Jenbacher Spare Parts Independently: A Buyer’s Verification Checklist
+title: "How to Source Jenbacher Spare Parts Independently: A Buyer’s Verification Checklist"
 date: 2022-10-15
 last_modified_at: 2026-09-04
 image: /assets/images/blog/mega-solutions-warehouse-sharjah.webp
-description: A practical checklist for power-plant teams sourcing Jenbacher Type 3 and Type 6 spare parts through an independent stockist: identification, traceability, scope, and delivery planning.
+description: "A practical checklist for power-plant teams sourcing Jenbacher Type 3 and Type 6 spare parts through an independent stockist: identification, traceability, scope, and delivery planning."
 category: Supply Chain
 ---
 
