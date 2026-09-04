@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Source Jenbacher Spare Parts Independently: A Buyer’s Verification Checklist"
+title: "Independent Jenbacher Parts Sourcing"
 date: 2022-10-15
 last_modified_at: 2026-09-04
 image: /assets/images/blog/mega-solutions-warehouse-sharjah.webp
