@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jenbacher 320 Maintenance Planning: Turning Site Findings into a Spares List"
+title: "Jenbacher 320 Maintenance Planning"
 date: 2023-08-20
 last_modified_at: 2026-09-04
 image: /assets/images/blog/jenbacher-320-type-3-maintenance-parts.webp
