@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Series 6 Maintenance Planning: Components to Review Before a Planned Outage"
+title: "Series 6 Outage Maintenance Planning"
 date: 2023-04-12
 last_modified_at: 2026-09-04
 image: /assets/images/blog/jenbacher-series-6-pre-combustion-chamber-reliability.webp
