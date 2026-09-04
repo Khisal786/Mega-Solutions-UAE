@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why Avoid Industrial Engine Maintenance Delays | Mega Solutions UAE"
+title: "Avoiding Industrial Engine Maintenance Delays"
 date: 2026-01-15
 image: /assets/images/blog/delaying-engine-maintenance-costs.webp
 description: "An economic and engineering analysis of why deferring scheduled maintenance on heavy industrial gas generators leads to exponential repair costs."
