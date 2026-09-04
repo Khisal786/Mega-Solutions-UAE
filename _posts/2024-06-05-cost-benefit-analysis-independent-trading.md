@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Independent Spare-Parts Sourcing vs Traditional Procurement: How to Compare the Real Cost"
+title: "Independent vs Traditional Parts Sourcing"
 date: 2024-06-05
 last_modified_at: 2026-09-04
 image: /assets/images/blog/cost-benefit-analysis-independent-engine-parts.webp
